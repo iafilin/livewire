@@ -94,7 +94,7 @@ export default {
                     e instanceof CustomEvent &&
                     typeof e.detail != 'undefined' &&
                     typeof window.document.documentMode == 'undefined'
-                        ? e.detail
+                        ? e.detail ?? e.target.value
                         : el.valueFromInput(component)
 
                 component.addAction(new ModelAction(model, value, el))
