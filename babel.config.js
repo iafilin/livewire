@@ -8,6 +8,7 @@ module.exports = {
                     edge: '18',
                     ie: "11",
                 },
+                modules: false
             },
         ],
     ],
